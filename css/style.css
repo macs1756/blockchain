@@ -750,6 +750,10 @@ footer {
 }
 
 @media (max-width: 600px) {
+  .initial {
+    margin-top: 60px;
+  }
+
   .initial__body {
     padding-top: 60px;
   }
