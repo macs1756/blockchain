@@ -99,4 +99,23 @@ setTimeout(()=>{
 }, 100)
 
 
+function changeNumber(count, e, t, inc) {
+  let i = 1;
+
+  function updateNumber() {
+    if (i <= count) {
+      e.innerText = i;
+      i = i + inc;
+      setTimeout(updateNumber, t); // Затримка у мілісекундах (тут 1000 мілісекунд = 1 секунда)
+    }
+  }
+
+  updateNumber();
+}
+
+// Приклад виклику функції зміни чисел до 6 з інтервалом в 1 секунду
+changeNumber(200,document.getElementById('i1'), 50, 6);
+changeNumber(14,document.getElementById('i2'), 150, 1);
+changeNumber(6,document.getElementById('i3'), 200, 1);
+
 
