@@ -752,6 +752,7 @@ footer {
 @media (max-width: 600px) {
   .initial {
     margin-top: 60px;
+    min-height: 650px;
   }
 
   .initial__body {
